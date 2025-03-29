@@ -1,5 +1,5 @@
 import { Component } from "core";
 
-export interface VelocityComponent extends Component {
-    speed: number;
+export class VelocityComponent implements Component {
+    speed!: number;
 }

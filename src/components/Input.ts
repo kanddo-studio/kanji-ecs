@@ -1,5 +1,5 @@
 import { Component } from "core";
 
-export interface InputComponent extends Component {
-    keys: Set<string>;
+export class InputComponent implements Component {
+    keys!: Set<string>;
 }

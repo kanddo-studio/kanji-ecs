@@ -1,0 +1,29 @@
+{
+  "name": "kanji-ecs",
+  "module": "src/index.ts",
+  "type": "module",
+  "version": "0.0.1",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    "./components": "./dist/components/index.js",
+    "./entities": "./dist/entities/index.js",
+    "./systems": "./dist/systems/index.js",
+    ".": "./dist/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "bunx tsc"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.8.2"
+  },
+  "dependencies": {
+    "phaser": "^3.88.2"
+  }
+}

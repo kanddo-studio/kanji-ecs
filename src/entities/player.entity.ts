@@ -1,6 +1,6 @@
 import Phaser from 'phaser';
 
-import { IComponent, MovementComponent } from 'components';
+import { IComponent, MovementComponent } from '../components';
 
 interface IPlayerEntityConstructor {
     scene: Phaser.Scene,

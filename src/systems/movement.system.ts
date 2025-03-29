@@ -1,7 +1,7 @@
 import Phaser from 'phaser';
 
-import { MovementComponent } from 'components/movement.component';
-import { PlayerEntity } from 'entities/player.entity';
+import { MovementComponent } from '../components';
+import { PlayerEntity } from '../entities';
 
 
 interface IMovementSystemConstructor {

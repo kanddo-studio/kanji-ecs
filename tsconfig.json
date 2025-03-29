@@ -6,11 +6,6 @@
     "declaration": true,
     "outDir": "./dist",
     "baseUrl": "./src",
-    "paths": {
-      "kanji-ecs/components": ["./components"],
-      "kanji-ecs/entities": ["./entities"],
-      "kanji-ecs/systems": ["./systems"]
-    },
     "strict": true,
     "esModuleInterop": true,
     "skipLibCheck": true,

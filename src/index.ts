@@ -1,3 +1,3 @@
 export * from './components';
-export * from './entities';
+export * from './core';
 export * from './systems';

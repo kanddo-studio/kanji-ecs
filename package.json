@@ -2,12 +2,12 @@
   "name": "kanji-ecs",
   "module": "src/index.ts",
   "type": "module",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "exports": {
     "./components": "./dist/components/index.js",
-    "./entities": "./dist/entities/index.js",
+    "./core": "./dist/core/index.js",
     "./systems": "./dist/systems/index.js",
     ".": "./dist/index.js"
   },

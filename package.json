@@ -2,7 +2,7 @@
   "name": "kanji-ecs",
   "module": "src/index.ts",
   "type": "module",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "exports": {
@@ -15,7 +15,8 @@
     "dist"
   ],
   "scripts": {
-    "build": "bunx tsc"
+    "build": "bunx tsc",
+    "publish": "npm run build && npm publish"
   },
   "devDependencies": {
     "@types/bun": "latest"

@@ -1,8 +1,10 @@
 # kanji-ecs
 
 <div align="center">
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/kanddo-studio/kanji-ecs/blob/HEAD/LICENSE)
-[![npm latest package](https://img.shields.io/npm/v/@kanji-ecs/latest.svg)](https://www.npmjs.com/package/@kanji-ecs)
+
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/kanddo/kanddo-ui/blob/HEAD/LICENSE)
+[![npm latest package](https://img.shields.io/npm/v/kanji-ecs/latest.svg)](https://www.npmjs.com/package/kanji-ecs)
+
 </div>
 
 kanji-ecs is a TypeScript library implementing the Entity-Component-System (ECS) pattern, designed to work seamlessly with Phaser. It provides a performant and flexible way to structure games and simulations, making it easier to manage entities, components, and systems in a decoupled manner.

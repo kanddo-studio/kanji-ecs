@@ -1,1 +1,1 @@
-export { MovementSystem } from './movement.system';
+export { MovementSystem } from './Movement';

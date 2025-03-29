@@ -7,7 +7,7 @@
 
 </div>
 
-kanji-ecs is a TypeScript library implementing the Entity-Component-System (ECS) pattern, designed to work seamlessly with Phaser. It provides a performant and flexible way to structure games and simulations, making it easier to manage entities, components, and systems in a decoupled manner.
+kanji-ecs is a TypeScript library implementing the Entity-Component-System (ECS) pattern, designed to work seamlessly. It provides a performant and flexible way to structure games and simulations, making it easier to manage entities, components, and systems in a decoupled manner.
 
 ## Installation
 

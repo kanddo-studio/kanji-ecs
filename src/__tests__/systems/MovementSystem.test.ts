@@ -30,33 +30,30 @@ describe("MovementSystem", () => {
   });
 
   it("should update position correctly based on input", () => {
-
     input.keys.add("ArrowUp");
     input.keys.add("ArrowRight");
 
-    const delta = 1; 
+    const delta = 1;
 
     movementSystem.update([entity], delta);
 
-    expect(position.x).toBeCloseTo(velocity.speed / Math.sqrt(2), 5); 
-    expect(position.y).toBeCloseTo(-velocity.speed / Math.sqrt(2), 5); 
+    expect(position.x).toBeCloseTo(velocity.speed / Math.sqrt(2), 5);
+    expect(position.y).toBeCloseTo(-velocity.speed / Math.sqrt(2), 5);
   });
 
   it("should handle missing components", () => {
-
-    entity = new Entity(); 
+    entity = new Entity();
 
     expect(() => {
-      const delta = 1; 
-      movementSystem.update([entity], delta); 
+      const delta = 1;
+      movementSystem.update([entity], delta);
     }).toThrow("Error: Missing Component Dependency");
   });
 
   it("should not update position if no input is provided", () => {
-
     const initialPosition = { ...position };
 
-    const delta = 1; 
+    const delta = 1;
     movementSystem.update([entity], delta);
 
     expect(position.x).toBe(initialPosition.x);
@@ -67,7 +64,7 @@ describe("MovementSystem", () => {
     input.keys.add("ArrowDown");
     input.keys.add("ArrowLeft");
 
-    const delta = 1; 
+    const delta = 1;
 
     movementSystem.update([entity], delta);
 

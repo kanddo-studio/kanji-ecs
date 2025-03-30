@@ -4,7 +4,7 @@ import { PositionComponent, VelocityComponent, InputComponent } from "components
 
 export class MovementSystem implements System {
     update(entities: Entity[], delta: number) {
-        for (const entity of entities) {
+        entities.forEach(entity => {
             const position = entity.get('position') as PositionComponent;
             const velocity = entity.get('velocity') as VelocityComponent;
             const input = entity.get('input') as InputComponent;
@@ -28,6 +28,6 @@ export class MovementSystem implements System {
                 position.x += dx * velocity.speed * delta;
                 position.y += dy * velocity.speed * delta;
             }
-        }
+        })
     }
 }

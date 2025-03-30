@@ -7,8 +7,8 @@ export class Entity {
         this.components.set(name, component);
     }
 
-    get(name: string): Component | undefined {
-        return this.components.get(name);
+    get<T extends Component>(name: string): T {
+        return this.components.get(name) as T;
     }
 
     has(name: string): boolean {

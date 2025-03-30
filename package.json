@@ -2,7 +2,7 @@
   "name": "kanji-ecs",
   "module": "src/index.ts",
   "type": "module",
-  "version": "0.0.10",
+  "version": "0.0.13",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "exports": {

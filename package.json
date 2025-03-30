@@ -2,7 +2,7 @@
   "name": "kanji-ecs",
   "module": "src/index.ts",
   "type": "module",
-  "version": "0.0.15",
+  "version": "0.0.16",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "exports": {
@@ -15,7 +15,10 @@
     "dist"
   ],
   "scripts": {
-    "build": "bunx tsc"
+    "build": "bunx tsc",
+    "prepublishOnly": "npm run build",
+    "lint:prettier": "npx prettier --write .",
+    "lint:fix": "npm run lint:prettier"
   },
   "devDependencies": {
     "@types/bun": "latest"
@@ -23,6 +26,5 @@
   "peerDependencies": {
     "typescript": "^5.8.2"
   },
-  "dependencies": {
-  }
+  "dependencies": {}
 }

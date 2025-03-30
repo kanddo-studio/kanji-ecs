@@ -16,9 +16,8 @@
   ],
   "scripts": {
     "build": "bunx tsc",
-    "test": "bun jest --passWithNoTests",
-    "test:coverage": "npm run test --coverage",
     "prepublishOnly": "npm run build",
+    "test": "bun jest --passWithNoTests",
     "lint:fix:prettier": "npx prettier --write .",
     "lint:fix": "npm run lint:fix:prettier",
     "prepare": "husky"
